@@ -30,12 +30,12 @@ $sides: (top, bottom, left, right); // Leave this variable alone
   }
   
   .mh#{$name} {
-    margin-left: #{$space} !important;
-    margin-right: #{$space} !important;
+    @extend .ml#{$name};
+    @extend .mr#{$name};
   }
 
   .mv#{$name} {
-    margin-top: #{$space} !important;
-    margin-bottom: #{$space} !important;
+    @extend .mt#{$name};
+    @extend .mb#{$name};
   }
 }
