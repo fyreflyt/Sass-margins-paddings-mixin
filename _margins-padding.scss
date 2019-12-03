@@ -19,6 +19,7 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 }
 
 // Grabbed and modified from https://gist.github.com/faramarzQ/47400ede5e7cf083ae069d0cf3dd3aa2
+// and https://gist.github.com/thom-nic/d873616fb448913e58ce34bd3c24c921
 @each $name, $space in $spaceamounts {
   .ma#{$name} {
     margin: #{$space} !important;
@@ -26,5 +27,15 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 
   .pa#{$name} {
     padding: #{$space} !important;
+  }
+  
+  .mh#{$name} {
+    margin-left: #{$space} !important;
+    margin-right: #{$space} !important;
+  }
+
+  .mv#{$name} {
+    margin-top: #{$space} !important;
+    margin-bottom: #{$space} !important;
   }
 }
