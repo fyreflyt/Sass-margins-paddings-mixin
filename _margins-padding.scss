@@ -17,3 +17,14 @@ $sides: (top, bottom, left, right); // Leave this variable alone
     }
   }
 }
+
+// Grabbed and modified from https://gist.github.com/faramarzQ/47400ede5e7cf083ae069d0cf3dd3aa2
+@each $name, $space in $spaceamounts {
+  .ma#{$name} {
+    margin: #{$space} !important;
+  }
+
+  .pa#{$name} {
+    padding: #{$space} !important;
+  }
+}
