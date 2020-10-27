@@ -1,6 +1,6 @@
 //I guess this is a fork of: https://gist.github.com/jacurtis/30da4bf9a6c9b9b5cc0aebac512ca7c9
 
-$base-grid: 8px
+$base-grid: 8px;
 
 $spaceamounts: ("n": 0, "s": $base-grid, "m": $base-grid * 2, "l": $base-grid * 3, "xl": $base-grid * 4); // Adjust this to include the pixel amounts you need.
 
