@@ -38,4 +38,14 @@ $sides: (top, bottom, left, right); // Leave this variable alone
     @extend .mt#{$name};
     @extend .mb#{$name};
   }
+
+  .ph#{$name} {
+    @extend .pl#{$name};
+    @extend .pr#{$name};
+  }
+
+  .pv#{$name} {
+    @extend .pt#{$name};
+    @extend .pb#{$name};
+  }
 }
